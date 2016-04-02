@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+	
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.44" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvidSQL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="user_id" />
+
+            <TextView
+                android:id="@+id/tvunSQL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="user_name" />
+
+            <TextView
+                android:id="@+id/tveidSQL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="email_id" />
+
+            <TextView
+                android:id="@+id/tvpwSQL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="user_password" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tvSQLinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="result from db" />
+	
+</LinearLayout>

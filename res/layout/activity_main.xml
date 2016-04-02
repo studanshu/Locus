@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_bg" 
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/loginTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#7b1515"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="Locus" />
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/loginTextview"
+        android:padding="2dp"
+        android:text="Username"
+        android:textColor="#7b1515" />
+
+    <EditText
+        android:id="@+id/unTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/emailTextView"
+        android:background="@drawable/roundedge" 
+        android:singleLine="true">
+		
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/passwordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#7b1515"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:padding="2dp"
+        android:layout_below="@id/unTextField"
+        android:text="Password" />
+    <EditText
+        android:id="@+id/passwordTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/roundedge"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:layout_below="@id/passwordTextView">
+
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/cbrememberme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/passwordTextField"
+        android:checked="true"
+        android:text="Save Login"
+        android:textColor="#7b1515" />
+
+    <TextView
+        android:id="@+id/bforgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:linksClickable="true"
+        android:text="Forgot ur Password"
+        android:textColor="#7b1515" />
+
+    <TextView
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bforgotPassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:linksClickable="true"
+        android:text="Need an account?\nSign up using your phone\n"
+        android:textColor="#7b1515" />
+
+    <Button
+        android:id="@+id/bLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/passwordTextField"
+        android:layout_below="@id/cbrememberme"
+        android:layout_marginTop="50dp"
+        android:text="LOGIN" 
+        android:textStyle="bold"
+        android:textColor="#7b1515"/>
+
+    <Button
+        android:id="@+id/bdbView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bLogin"
+        android:layout_below="@+id/bLogin"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="18dp"
+        android:text="View" />
+	
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2014 Nordic Semiconductor. All Rights Reserved.
+  
+  The information contained herein is property of Nordic Semiconductor ASA.
+  Terms and conditions of usage are described in detail in NORDIC SEMICONDUCTOR STANDARD SOFTWARE LICENSE AGREEMENT.
+  Licensees are granted free, non-transferable use of the information. NO WARRANTY of ANY KIND is provided. 
+  This heading must NOT be removed from the file.
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="12dp"/>
+    
+    <solid android:color="#88000000"/>
+    
+    <size android:width="200dp" android:height="200dp"/>
+</shape>

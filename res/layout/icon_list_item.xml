@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2014 Nordic Semiconductor. All Rights Reserved.
+  
+  The information contained herein is property of Nordic Semiconductor ASA.
+  Terms and conditions of usage are described in detail in NORDIC SEMICONDUCTOR STANDARD SOFTWARE LICENSE AGREEMENT.
+  Licensees are granted free, non-transferable use of the information. NO WARRANTY of ANY KIND is provided. 
+  This heading must NOT be removed from the file.
+-->
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+    android:drawablePadding="6dp"
+    android:gravity="center_vertical"
+    android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+    android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+    android:textAppearance="?android:attr/textAppearanceListItemSmall" />

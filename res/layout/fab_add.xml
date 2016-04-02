@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.google.samples.apps.iosched.ui.widget.FloatingActionButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fab_add"
+    android:background="@drawable/fab_background" >
+
+    <ImageView
+        android:layout_width="@dimen/fab_icon_size"
+        android:layout_height="@dimen/fab_icon_size"
+        android:layout_gravity="center"
+        android:duplicateParentState="true"
+        android:src="@drawable/fab_icons" />
+
+</com.google.samples.apps.iosched.ui.widget.FloatingActionButton>

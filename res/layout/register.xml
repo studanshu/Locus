@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    
+    android:background="@drawable/common_bg">
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Welcome to Locus" 
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#7b1515"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/welcomeTextView"
+        android:text="User Name"
+        android:textSize="15dp" 
+        android:padding="8dp"
+        android:layout_marginTop="10dp"
+        
+        android:textColor="#7b1515"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/etunReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/userNameTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/userNameTextView"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/userNameTextView"
+        android:background="@drawable/roundedge"
+        android:hint="Type user ID" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/emailTextVieW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@id/userNameTextView"
+        android:layout_below="@id/etunReg"
+        android:textSize="15dp"
+        android:padding="8dp"
+        android:textStyle="bold"
+        
+        android:textColor="#7b1515"
+        android:layout_marginTop="10dp"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/eteidReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/emailTextVieW"
+        android:layout_alignLeft="@id/etunReg"
+        android:layout_alignRight="@id/etunReg"
+        android:layout_alignTop="@id/emailTextVieW"
+        android:background="@drawable/roundedge"
+        android:hint="Give ur email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etpwrReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/confirmPasswordTextView"
+        android:layout_alignLeft="@id/etunReg"
+        android:layout_alignRight="@id/etunReg"
+        android:layout_alignTop="@id/confirmPasswordTextView"
+        android:background="@drawable/roundedge"
+        android:hint="Re-Type Password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/passwordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/emailTextVieW"
+        android:layout_marginTop="10dp"
+        
+        android:textColor="#7b1515"
+        android:layout_toLeftOf="@id/etunReg"
+        android:padding="8dp"
+        android:text="Password"
+        android:textStyle="bold"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/confirmPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@id/passwordTextView"
+        android:layout_below="@id/passwordTextView"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        
+        android:textColor="#7b1515"
+        android:text="Confirm Password"
+        android:textStyle="bold"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/etpwReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/confirmPasswordTextView"
+        android:layout_alignLeft="@id/etpwrReg"
+        android:layout_alignRight="@id/etunReg"
+        android:layout_alignTop="@id/passwordTextView"
+        android:background="@drawable/roundedge"
+        android:hint="Type password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/bRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/etpwrReg"
+        android:layout_alignRight="@id/etpwrReg"
+        android:layout_below="@id/etpwrReg"
+        android:layout_marginBottom="170dp"
+        android:layout_marginTop="40dp"
+        android:text="Register" />
+
+</RelativeLayout>

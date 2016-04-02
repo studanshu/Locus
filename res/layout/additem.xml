@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_bg"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivImageadd"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ivImageadd"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/ivImageadd"
+        android:gravity="center_vertical"
+        android:text="Enter your beacon name and an optional picture and description"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#7b1515" />
+
+    <EditText
+        android:id="@+id/etNameadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ivImageadd"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ivImageadd"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/roundedge"
+        android:hint="Name" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bDoneadd"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/etDescriptionadd"
+        android:layout_alignTop="@+id/textView1"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/bPlusadd"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="36"
+            android:background="@drawable/topround"
+            android:gravity="top|center_horizontal"
+            android:text="+"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tveLeashRangeadd"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="35"
+            android:background="#fff"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="number"
+            android:text="0"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textColorHint="@android:color/holo_blue_dark" >
+
+            <requestFocus />
+        </TextView>
+
+        <Button
+            android:id="@+id/bMinusadd"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="36"
+            android:background="@drawable/topround"
+            android:gravity="center_horizontal"
+            android:text="-"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bPictureadd"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_alignLeft="@+id/etNameadd"
+        android:layout_alignRight="@+id/ivImageadd"
+        android:layout_below="@+id/ivImageadd"
+        android:gravity="center"
+        android:text="Edit"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#7b1515"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/ivImageadd"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/ic_launcher2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etNameadd"
+        android:layout_below="@+id/etNameadd"
+        android:padding="5dp"
+        android:text="Description"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#7b1515" />
+
+    <EditText
+        android:id="@+id/etDescriptionadd"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView2"
+        android:background="@drawable/roundedge"
+        android:ems="10"
+        android:gravity="center_horizontal|start"
+        android:hint="Add a brief description..."
+        android:inputType="textMultiLine"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etDescriptionadd"
+        android:layout_below="@+id/etDescriptionadd"
+        android:layout_marginTop="34dp"
+        android:text="E-Leash Range :"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#7b1515"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/bDoneadd"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView3"
+        android:background="@drawable/topround"
+        android:text="Done"
+        android:textColor="#7b1515" />
+
+</RelativeLayout>
